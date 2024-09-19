@@ -1,13 +1,19 @@
-import { H1 } from '@stylin.js/elements';
 import { FC } from 'react';
 
 import { Layout } from '@/components';
-import { LogoSVG } from '@/components/svg';
+import About from '@/components/about';
+import Hero from '@/components/hero';
+import Liquidity from '@/components/liquidity';
+import Pugnomics from '@/components/pugnomics';
+import Utility from '@/components/utility';
 
 const Home: FC = () => (
   <Layout>
-    <H1>Home</H1>
-    <LogoSVG maxHeight="3rem" maxWidth="3rem" width="100%" />
+    <Hero />
+    <About />
+    <Pugnomics />
+    <Liquidity />
+    <Utility />
   </Layout>
 );
 
