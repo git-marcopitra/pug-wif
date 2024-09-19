@@ -26,7 +26,7 @@ const About: FC = () => (
     >
       <H2 fontSize={['3rem', '3rem', '4rem']}>ABOUT PUGWIFHAT</H2>
       <P fontFamily="Rubik" fontSize={['1.5rem', '1.5rem', '2rem']}>
-        Born out of the ashes rises that pug that just never quits. Resilient
+        Born out of the ashes, rises the pug that just never quits. Resilient
         dog here to take over, {"we've"} got the {"pug's"} paws to make it, the
         nose to find the way, and the energy to take it far beyond just a cute
         dog.
