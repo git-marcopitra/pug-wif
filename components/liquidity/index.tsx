@@ -12,6 +12,8 @@ import {
 import { FC } from 'react';
 import toast from 'react-hot-toast';
 
+import { CA } from '@/constants';
+
 import { CopySVG, TraceSVG } from '../svg';
 
 const Liquidity: FC = () => (
@@ -77,7 +79,7 @@ const Liquidity: FC = () => (
         flexDirection={['column', 'column', 'column', 'row']}
       >
         <P wordBreak="break-word" fontSize="3rem">
-          0x2cd6f14a4b64c3a0fa9c644e8ed88d9c91d789a071886d67d24e6b435147063d::pugwif::PUGWIF
+          {CA}
         </P>
         <Button
           all="unset"
@@ -92,9 +94,7 @@ const Liquidity: FC = () => (
           justifyContent="center"
           borderRadius="1.625rem"
           onClick={() => {
-            window.navigator.clipboard.writeText(
-              '0x2cd6f14a4b64c3a0fa9c644e8ed88d9c91d789a071886d67d24e6b435147063d::pugwif::PUGWIF'
-            );
+            window.navigator.clipboard.writeText(CA);
             toast('Copied');
           }}
         >

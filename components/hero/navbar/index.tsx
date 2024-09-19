@@ -1,6 +1,7 @@
 import { A, Button, Div, Img, Nav } from '@stylin.js/elements';
 import { FC } from 'react';
 
+import BuyButton from '@/components/buy-button';
 import { TelegramSVG, XSVG } from '@/components/svg';
 
 const Navbar: FC = () => (
@@ -60,21 +61,7 @@ const Navbar: FC = () => (
           <XSVG maxWidth="1.4rem" maxHeight="1.4rem" width="100%" />
         </Button>
       </Div>
-      <Button
-        all="unset"
-        px="2.5rem"
-        bg="#2076B4"
-        height="4rem"
-        display="flex"
-        color="#ffffff"
-        fontSize="2rem"
-        alignItems="center"
-        borderRadius="1.625rem"
-        justifyContent="center"
-        boxShadow="-3px -3px 0 0 #1C2E3B"
-      >
-        Buy
-      </Button>
+      <BuyButton boxShadow="-3px -3px 0 0 #1C2E3B">Buy</BuyButton>
     </Div>
   </Div>
 );
