@@ -18,7 +18,12 @@ const About: FC = () => (
       'row',
     ]}
   >
-    <Aside display="flex" gap="1rem" flexDirection="column" a>
+    <Aside
+      gap="1rem"
+      display="flex"
+      flexDirection="column"
+      alignItems={['center', 'center', 'flex-start']}
+    >
       <H2 fontSize={['3rem', '3rem', '4rem']}>ABOUT PUGWIFHAT</H2>
       <P fontFamily="Rubik" fontSize={['1.5rem', '1.5rem', '2rem']}>
         Born out of the ashes rises that pug that just never quits. Resilient
