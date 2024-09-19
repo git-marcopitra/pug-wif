@@ -11,7 +11,7 @@ const handler = async (req: NextApiRequest, res: NextApiResponse) => {
 
     const type = req.query.type as string;
     const network = req.query.network as Network;
-    const typeList = (req.query.coinsType as string).split(',');
+    const typeList = (req.query.coinsType as string)?.split(',');
 
     if (type) {
       const doc = await getCoinMetadata(type, network);
@@ -27,6 +27,8 @@ const handler = async (req: NextApiRequest, res: NextApiResponse) => {
 
     return res.status(404).json({ message: 'No coin type requested' });
   } catch (e) {
+    console.log(e);
+
     res.status(500).send(e);
   }
 };
