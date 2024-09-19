@@ -37,6 +37,7 @@ const Utility: FC = () => (
         bottom="-4rem"
         position="absolute"
         src="/pugwifhat.webp"
+        display={['none', 'none', 'block']}
       />
       <H3 color="#fff" fontSize={['2rem', '2.5rem', '3rem']}>
         Join the community
