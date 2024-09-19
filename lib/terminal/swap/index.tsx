@@ -24,18 +24,20 @@ const Swap: FC = () => {
   return (
     <>
       <Box display="flex" justifyContent="space-between">
-        <Box display="flex" alignItems="center" gap="xs">
-          <LogoSVG maxWidth="1.6rem" maxHeight="1.6rem" width="100%" />
-          <Typography
-            size="small"
-            variant="title"
-            fontWeight="700"
-            color="onSurface"
-            width="max-content"
-          >
-            SUI COINS
-          </Typography>
-        </Box>
+        <a href="https://suicoins.com">
+          <Box display="flex" alignItems="center" gap="xs">
+            <LogoSVG maxWidth="1.6rem" maxHeight="1.6rem" width="100%" />
+            <Typography
+              size="small"
+              variant="title"
+              fontWeight="700"
+              color="onSurface"
+              width="max-content"
+            >
+              SUI COINS
+            </Typography>
+          </Box>
+        </a>
         <WalletButton />
       </Box>
       <Box display="flex" borderRadius="l" flexDirection="column">
