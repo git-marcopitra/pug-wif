@@ -25,7 +25,7 @@ const Hero: FC = () => (
       position="absolute"
       justifyContent="center"
     >
-      <Img height="70vh" alt="The Pug" src="/the-pug.webp" />
+      <Img height="72vh" alt="The Pug" src="/the-pug.webp" />
     </Div>
     <Div
       p="0.5rem"
