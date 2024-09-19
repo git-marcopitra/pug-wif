@@ -32,34 +32,38 @@ const Navbar: FC = () => (
     </Nav>
     <Div display="flex" gap="2rem" justifyContent="flex-end">
       <Div display={['none', 'none', 'flex']} gap="2rem">
-        <Button
-          all="unset"
-          bg="#A56A58"
-          width="4rem"
-          height="4rem"
-          display="flex"
-          color="#ffffff"
-          borderRadius="50%"
-          alignItems="center"
-          justifyContent="center"
-          boxShadow="3px 3px 0 0 #341A12"
-        >
-          <TelegramSVG maxWidth="2rem" maxHeight="2rem" width="100%" />
-        </Button>
-        <Button
-          all="unset"
-          bg="#DAE2E9"
-          width="4rem"
-          height="4rem"
-          display="flex"
-          color="#000000"
-          borderRadius="50%"
-          alignItems="center"
-          justifyContent="center"
-          boxShadow="3px 3px 0 0 #0A4E8D"
-        >
-          <XSVG maxWidth="1.4rem" maxHeight="1.4rem" width="100%" />
-        </Button>
+        <A href="https://t.me/pugwifportal" target="_blank" rel="noreferrer">
+          <Button
+            all="unset"
+            bg="#A56A58"
+            width="4rem"
+            height="4rem"
+            display="flex"
+            color="#ffffff"
+            borderRadius="50%"
+            alignItems="center"
+            justifyContent="center"
+            boxShadow="3px 3px 0 0 #341A12"
+          >
+            <TelegramSVG maxWidth="2rem" maxHeight="2rem" width="100%" />
+          </Button>
+        </A>
+        <A href="https://x.com/Pugwifsui" target="_blank" rel="noreferrer">
+          <Button
+            all="unset"
+            bg="#DAE2E9"
+            width="4rem"
+            height="4rem"
+            display="flex"
+            color="#000000"
+            borderRadius="50%"
+            alignItems="center"
+            justifyContent="center"
+            boxShadow="3px 3px 0 0 #0A4E8D"
+          >
+            <XSVG maxWidth="1.4rem" maxHeight="1.4rem" width="100%" />
+          </Button>
+        </A>
       </Div>
       <BuyButton boxShadow="-3px -3px 0 0 #1C2E3B">Buy</BuyButton>
     </Div>

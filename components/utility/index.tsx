@@ -1,4 +1,4 @@
-import { Button, Div, Footer, H2, H3, Img, P } from '@stylin.js/elements';
+import { A, Button, Div, Footer, H2, H3, Img, P } from '@stylin.js/elements';
 import { FC } from 'react';
 
 import { TelegramSVG, XSVG } from '../svg';
@@ -42,34 +42,38 @@ const Utility: FC = () => (
         Join the community
       </H3>
       <Div display="flex" gap="2rem">
-        <Button
-          all="unset"
-          bg="#000000"
-          width="4rem"
-          height="4rem"
-          display="flex"
-          color="#ffffff"
-          borderRadius="50%"
-          alignItems="center"
-          justifyContent="center"
-          boxShadow="3px 3px 0 0 #ffffff"
-        >
-          <TelegramSVG maxWidth="2rem" maxHeight="2rem" width="100%" />
-        </Button>
-        <Button
-          all="unset"
-          bg="#000000"
-          width="4rem"
-          height="4rem"
-          display="flex"
-          color="#ffffff"
-          borderRadius="50%"
-          alignItems="center"
-          justifyContent="center"
-          boxShadow="3px 3px 0 0 #ffffff"
-        >
-          <XSVG maxWidth="1.4rem" maxHeight="1.4rem" width="100%" />
-        </Button>
+        <A href="https://t.me/pugwifportal" target="_blank" rel="noreferrer">
+          <Button
+            all="unset"
+            bg="#000000"
+            width="4rem"
+            height="4rem"
+            display="flex"
+            color="#ffffff"
+            borderRadius="50%"
+            alignItems="center"
+            justifyContent="center"
+            boxShadow="3px 3px 0 0 #ffffff"
+          >
+            <TelegramSVG maxWidth="2rem" maxHeight="2rem" width="100%" />
+          </Button>
+        </A>
+        <A href="https://x.com/Pugwifsui" target="_blank" rel="noreferrer">
+          <Button
+            all="unset"
+            bg="#000000"
+            width="4rem"
+            height="4rem"
+            display="flex"
+            color="#ffffff"
+            borderRadius="50%"
+            alignItems="center"
+            justifyContent="center"
+            boxShadow="3px 3px 0 0 #ffffff"
+          >
+            <XSVG maxWidth="1.4rem" maxHeight="1.4rem" width="100%" />
+          </Button>
+        </A>
       </Div>
     </Div>
   </Footer>
