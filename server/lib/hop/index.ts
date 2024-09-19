@@ -29,15 +29,12 @@ export const quote = async (
   token_in: string,
   token_out: string,
   amount_in: bigint
-): Promise<GetQuoteResponse> => {
-  console.log({ token_in, token_out, amount_in });
-
-  return sdk.fetchQuote({
+): Promise<GetQuoteResponse> =>
+  sdk.fetchQuote({
     token_in: normalizeStructTag(token_in),
     token_out: normalizeStructTag(token_out),
     amount_in,
   });
-};
 
 export const swap = async ({ trade, account, slippage }: SwapArg) => {
   const { transaction } = await sdk.fetchTx({
@@ -48,7 +45,7 @@ export const swap = async ({ trade, account, slippage }: SwapArg) => {
   });
 
   const txbArray = await transaction.build({
-    client: SUI_CLIENT_PROVIDER_MAP[Network.MAINNET],
+    client: SUI_CLIENT_PROVIDER_MAP[Network.MAINNET] as any,
     onlyTransactionKind: true,
   });
 

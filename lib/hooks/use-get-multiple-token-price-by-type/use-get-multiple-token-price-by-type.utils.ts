@@ -37,7 +37,9 @@ export const getCMCPrices = (types: ReadonlyArray<string>, network: Network) =>
 export const getAFPrices = (types: ReadonlyArray<string>, network: Network) =>
   fetch(
     encodeURI(
-      `https://aftermath.finance/api/price-info/["${types.join('","')}"]`
+      `https://aftermath.finance/api/price-info/["${types
+        .map(normalizeStructTag)
+        .join('","')}"]`
     ),
     {
       next: { revalidate: 1800 },

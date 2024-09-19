@@ -1,10 +1,10 @@
-/* eslint-disable unused-imports/no-unused-vars */
 /* eslint-disable @typescript-eslint/no-unused-vars */
+
 import { Network } from '@/lib/constants';
 import { CoinMetadataWithType } from '@/lib/interface';
 import { getBasicCoinMetadata, getSymbolByType } from '@/lib/utils';
-import { CoinMetadataModel } from '@/server/model/coin-metadata';
 
+import { CoinMetadataModel } from '../../model/coin-metadata';
 import { COIN_METADATA_MODEL_MAP, SUI_CLIENT_PROVIDER_MAP } from '../utils';
 
 export const chunk = <T = unknown>(
@@ -22,10 +22,7 @@ const getCoinMetadataList = async (
   const Model = COIN_METADATA_MODEL_MAP[network];
   const suiClient = SUI_CLIENT_PROVIDER_MAP[network];
 
-  const uniqueTypeList = typeList.reduce(
-    (acc, type) => (acc.includes(type) ? acc : [...acc, type]),
-    [] as ReadonlyArray<string>
-  );
+  const uniqueTypeList = [...new Set(typeList)];
 
   const batches = chunk(uniqueTypeList, 50);
 
@@ -47,11 +44,9 @@ const getCoinMetadataList = async (
     {} as Record<string, CoinMetadataModel>
   );
 
-  const missingCoinsType = uniqueTypeList.reduce(
-    (acc, type) =>
-      !docsMap[type] || acc.includes(type) ? acc : [...acc, type],
-    [] as ReadonlyArray<string>
-  );
+  const missingCoinsType = [
+    ...new Set(uniqueTypeList.filter((type) => !docsMap[type])),
+  ];
 
   if (!missingCoinsType.length) return flattenedDocs;
 
