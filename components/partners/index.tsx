@@ -10,7 +10,7 @@ const Partners: FC = () => (
     mx="auto"
     mt="9rem"
     bg="#ffffff"
-    maxWidth="66rem"
+    maxWidth="70rem"
     position="relative"
     borderRadius="4rem"
     boxShadow="0 18px 0 0 #D7D7D7"
@@ -31,7 +31,7 @@ const Partners: FC = () => (
     </Div>
     <Div
       my="2rem"
-      gap="3rem"
+      gap="2rem"
       display="flex"
       flexWrap="wrap"
       alignItems="center"
@@ -46,11 +46,11 @@ const Partners: FC = () => (
         href="https://interestprotocol.com"
       >
         <Img
-          width="5rem"
+          width="4rem"
           src="/interest-protocol.webp"
           alt="Interest Protocol Logo"
         />
-        <H4 fontSize="2rem">
+        <H4 fontSize="2rem" lineHeight="1.8rem">
           Interest
           <br />
           Protocol
@@ -65,11 +65,11 @@ const Partners: FC = () => (
         href="https://turbos.finance"
       >
         <Img
-          width="5rem"
+          width="4rem"
           src="/turbos-finance.webp"
           alt="Turbos Finance Logo"
         />
-        <H4 fontSize="2rem">
+        <H4 fontSize="2rem" lineHeight="1.8rem">
           Turbos
           <br />
           Finance
@@ -83,11 +83,26 @@ const Partners: FC = () => (
         alignItems="center"
         href="https://nozomi.world/"
       >
-        <Img width="5rem" src="/studio-mirai.webp" alt="Studio Mirai Logo" />
-        <H4 fontSize="2rem">
+        <Img width="4rem" src="/studio-mirai.webp" alt="Studio Mirai Logo" />
+        <H4 fontSize="2rem" lineHeight="1.8rem">
           Studio
           <br />
           Mirai
+        </H4>
+      </A>
+      <A
+        gap="1rem"
+        display="flex"
+        target="_blank"
+        rel="noreferrer"
+        alignItems="center"
+        href="https://dsllegacy.xyz"
+      >
+        <Img width="4rem" src="/dsl-legacy.webp" alt="DSL Legacy Logo" />
+        <H4 fontSize="2rem" lineHeight="1.8rem">
+          DSL
+          <br />
+          Legacy
         </H4>
       </A>
     </Div>
