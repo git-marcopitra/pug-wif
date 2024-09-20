@@ -4,6 +4,8 @@ import { Button, ButtonProps, Div } from '@stylin.js/elements';
 import dynamic from 'next/dynamic';
 import { FC, useState } from 'react';
 
+import { Aggregator } from '@/lib/terminal/swap/swap.types';
+
 import { CA } from '../../constants';
 import { TimesSVG } from '../svg';
 
@@ -55,7 +57,12 @@ const BuyButton: FC<ButtonProps> = (props) => {
             animate={{ opacity: 1 }}
             transition={{ duration: 0.8 }}
           >
-            <SwapInterface fixedOut typeIn={SUI_TYPE_ARG} typeOut={CA} />
+            <SwapInterface
+              fixedOut
+              typeOut={CA}
+              typeIn={SUI_TYPE_ARG}
+              aggregator={Aggregator.Aftermath}
+            />
           </Motion>
         </Div>
       </Modal>

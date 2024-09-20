@@ -37,18 +37,15 @@ export const fetchCoinMetadata: FetchCoinMetadata = async (args) => {
     searchParams.set('type', args.type);
     searchParams.set('network', args.network);
 
-    return await fetch(
-      `/api/terminal/v1/coin-metadata?${searchParams.toString()}`,
-      {
-        method: 'GET',
-        mode: 'no-cors',
-        headers: {
-          Accept: 'application/json',
-          'Content-Type': 'application/json',
-          'Access-Control-Allow-Origin': '*',
-        },
-      }
-    )
+    return await fetch(`/api/v1/coin-metadata?${searchParams.toString()}`, {
+      method: 'GET',
+      mode: 'no-cors',
+      headers: {
+        Accept: 'application/json',
+        'Content-Type': 'application/json',
+        'Access-Control-Allow-Origin': '*',
+      },
+    })
       .then((res) => res.json())
       .then((data) => {
         metadatas[args.type] = data;
@@ -78,7 +75,7 @@ export const fetchCoinMetadata: FetchCoinMetadata = async (args) => {
   searchParams.set('coinsType', missingTypes.join());
 
   const missingMetadatas = await fetch(
-    `/api/terminal/v1/coin-metadata?${searchParams.toString()}`,
+    `/api/v1/coin-metadata?${searchParams.toString()}`,
     {
       method: 'GET',
       mode: 'no-cors',

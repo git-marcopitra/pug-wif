@@ -50,7 +50,7 @@ const FavoriteTokens: FC<{ onSelectToken: (coin: CoinObject) => void }> = ({
     if (token) return onSelectToken(coinDataToCoinObject(token));
 
     const metadata = await fetch(
-      `/api/terminal/v1/coin-metadata?type=${type}&network=${network}`,
+      `/api/v1/coin-metadata?type=${type}&network=${network}`,
       {
         method: 'GET',
         mode: 'no-cors',

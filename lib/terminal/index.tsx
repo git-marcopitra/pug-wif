@@ -47,7 +47,7 @@ export const SwapInterface: FC<SwapInterfaceProps> = ({
     if (fixedOut) form.setValue('fixedOut', fixedOut);
     if (interval) form.setValue('settings.interval', interval);
     if (slippage) form.setValue('settings.slippage', slippage);
-    if (aggregator) form.setValue('settings.slippage', aggregator);
+    if (aggregator) form.setValue('settings.aggregator', aggregator);
   }, [fixedIn, fixedOut, interval, slippage, aggregator]);
 
   return (

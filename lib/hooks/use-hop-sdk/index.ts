@@ -6,7 +6,7 @@ import { JSONQuoteResponse } from '../../terminal/swap/swap.types';
 export const useHopSdk = () => ({
   quote: (coinIn: string, coinOut: string, amountIn: string) =>
     fetch(
-      `/api/terminal/v1/hop/quote?coinIn=${coinIn}&coinOut=${coinOut}&amountIn=${amountIn}`,
+      `/api/v1/hop/quote?coinIn=${coinIn}&coinOut=${coinOut}&amountIn=${amountIn}`,
       {
         mode: 'no-cors',
         headers: {
@@ -21,7 +21,7 @@ export const useHopSdk = () => ({
     searchParams.set('slippage', String(slippage));
     searchParams.set('trade', JSON.stringify(trade));
 
-    return fetch(`/api/terminal/v1/hop/swap?${searchParams.toString()}`)
+    return fetch(`/api/v1/hop/swap?${searchParams.toString()}`)
       .then((response) => response.json?.())
       .then(({ txb }: { txb: string }) =>
         Transaction.fromKind(txb)

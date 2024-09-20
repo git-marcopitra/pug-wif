@@ -9,9 +9,7 @@ import {
 
 export const getCMCPrices = (types: ReadonlyArray<string>, network: Network) =>
   fetch(
-    `/api/terminal/v1/coin-price?id=${types.map(
-      (type) => CMC_COIN_ID[network][type]
-    )}`,
+    `/api/v1/coin-price?id=${types.map((type) => CMC_COIN_ID[network][type])}`,
     {
       next: { revalidate: 1800 },
       mode: 'no-cors',
@@ -37,9 +35,7 @@ export const getCMCPrices = (types: ReadonlyArray<string>, network: Network) =>
 export const getAFPrices = (types: ReadonlyArray<string>, network: Network) =>
   fetch(
     encodeURI(
-      `https://aftermath.finance/api/price-info/["${types
-        .map(normalizeStructTag)
-        .join('","')}"]`
+      `https://aftermath.finance/api/price-info/["${types.join('","')}"]`
     ),
     {
       next: { revalidate: 1800 },
