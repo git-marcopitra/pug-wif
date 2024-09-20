@@ -7,11 +7,18 @@ import { TraceSVG } from '../svg';
 
 const Pugnomics: FC = () => {
   const [burned, setBurned] = useState('0');
+  const [burnedPer, setBurnedPer] = useState(0);
 
   useEffect(() => {
-    getBurnedAmount().then((value) =>
-      setBurned(reverseStringChunk(String(value).slice(0, -9), 3).join())
-    );
+    getBurnedAmount().then((value) => {
+      setBurnedPer(
+        +(
+          (Number(String(value).slice(0, -9)) / 1_000_000_000) *
+          100
+        ).toPrecision(2)
+      );
+      setBurned(reverseStringChunk(String(value).slice(0, -9), 3).join());
+    });
   }, []);
 
   return (
@@ -61,7 +68,9 @@ const Pugnomics: FC = () => {
         </Div>
         <Div display="flex" alignItems="center" gap="1rem" color="#fff">
           <Img src="/pug-icon.webp" alt="Pug Icon" width={['4rem', '6rem']} />
-          <P fontSize={['2rem', '2.5rem', '3rem']}>Burned- {burned}</P>
+          <P fontSize={['2rem', '2.5rem', '3rem']}>
+            % Burned- {burnedPer}% ({burned})
+          </P>
         </Div>
       </Div>
     </Section>
