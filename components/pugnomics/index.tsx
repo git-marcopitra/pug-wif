@@ -3,6 +3,7 @@ import { FC, useEffect, useState } from 'react';
 
 import { getBurnedAmount, reverseStringChunk } from '@/utilts';
 
+import Partners from '../partners';
 import { TraceSVG } from '../svg';
 
 const Pugnomics: FC = () => {
@@ -73,6 +74,7 @@ const Pugnomics: FC = () => {
           </P>
         </Div>
       </Div>
+      <Partners />
     </Section>
   );
 };
