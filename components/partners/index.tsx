@@ -100,9 +100,9 @@ const Partners: FC = () => (
       >
         <Img width="4rem" src="/dsl-legacy.webp" alt="DSL Legacy Logo" />
         <H4 fontSize="2rem" lineHeight="1.8rem">
-          DSL
-          <br />
           Legacy
+          <br />
+          DAO
         </H4>
       </A>
     </Div>
