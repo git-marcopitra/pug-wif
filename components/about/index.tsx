@@ -31,8 +31,8 @@ const About: FC = () => (
         fontSize={['1.5rem', '1.5rem', '1.8rem']}
         lineHeight={['2.2rem', '2.2rem', '3rem']}
       >
-        Resurging from the ashes of a premature rug, arose the pug that{' '}
-        {"doesn't"}
+        Resurging from the ashes of a premature rug, arose the pug that
+        {" doesn't"}
         quit. His message is clear: he {"won't"} stand for scams.
       </P>
       <br />
