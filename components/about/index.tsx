@@ -26,11 +26,24 @@ const About: FC = () => (
       alignItems={['center', 'center', 'flex-start']}
     >
       <H2 fontSize={['3rem', '3rem', '4rem']}>ABOUT PUGWIFHAT</H2>
-      <P fontFamily="Rubik" fontSize={['1.5rem', '1.5rem', '2rem']}>
-        Born out of the ashes, rises the pug that just never quits. Resilient
-        dog here to take over, {"we've"} got the {"pug's"} paws to make it, the
-        nose to find the way, and the energy to take it far beyond just a cute
-        dog.
+      <P
+        fontFamily="Rubik"
+        fontSize={['1.5rem', '1.5rem', '1.8rem']}
+        lineHeight="3rem"
+      >
+        Resurging from the ashes of a premature rug, arose the pug that{' '}
+        {"doesn't"}
+        quit. His message is clear: he {"won't"} stand for scams.
+      </P>
+      <br />
+      <P
+        fontFamily="Rubik"
+        fontSize={['1.5rem', '1.5rem', '1.8rem']}
+        lineHeight="3rem"
+      >
+        The Sui ecosystem now rallies behind this unsuspected hero. All he has
+        is his resilient spirit, a blue Sui hat and the support of the whole
+        community.
       </P>
       <H3 fontSize={['2rem', '2rem', '3rem']}>the hat STAYS on the pug</H3>
       <Button
