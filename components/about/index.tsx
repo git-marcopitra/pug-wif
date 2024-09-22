@@ -29,7 +29,7 @@ const About: FC = () => (
       <P
         fontFamily="Rubik"
         fontSize={['1.5rem', '1.5rem', '1.8rem']}
-        lineHeight="3rem"
+        lineHeight={['2.2rem', '2.2rem', '3rem']}
       >
         Resurging from the ashes of a premature rug, arose the pug that{' '}
         {"doesn't"}
@@ -39,7 +39,7 @@ const About: FC = () => (
       <P
         fontFamily="Rubik"
         fontSize={['1.5rem', '1.5rem', '1.8rem']}
-        lineHeight="3rem"
+        lineHeight={['2.2rem', '2.2rem', '3rem']}
       >
         The Sui ecosystem now rallies behind this unsuspected hero. All he has
         is his resilient spirit, a blue Sui hat and the support of the whole
