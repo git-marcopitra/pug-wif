@@ -6,7 +6,6 @@ import Navbar from './navbar';
 
 const Hero: FC = () => (
   <Header
-    id="home"
     height="100vh"
     overflow="hidden"
     position="relative"

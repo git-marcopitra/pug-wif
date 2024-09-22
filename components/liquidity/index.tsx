@@ -20,6 +20,7 @@ const Liquidity: FC = () => (
   <Section
     py="6rem"
     px="2rem"
+    id="liquidity"
     backgroundImage="url(/liquidity.webp)"
     backgroundPosition="center center"
     backgroundSize="cover"

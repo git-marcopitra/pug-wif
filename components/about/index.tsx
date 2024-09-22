@@ -5,6 +5,7 @@ const About: FC = () => (
   <Section
     my="6rem"
     mx="auto"
+    id="about"
     gap="2rem"
     display="flex"
     maxWidth="90rem"

@@ -26,9 +26,9 @@ const Navbar: FC = () => (
       justifyContent="center"
       display={['none', 'none', 'none', 'flex']}
     >
-      <A href="#home">Home</A>
+      <A href="#about">about</A>
       <A href="#pugnomics">Pugnomics</A>
-      <A href="#roadmap">Roadmap</A>
+      <A href="#liquidity">liquidity</A>
     </Nav>
     <Div display="flex" gap="2rem" justifyContent="flex-end">
       <Div display={['none', 'none', 'flex']} gap="2rem">

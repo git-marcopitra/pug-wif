@@ -23,6 +23,7 @@ const Pugnomics: FC = () => {
   return (
     <Section
       py="8rem"
+      id="pugnomics"
       px={['1rem', '3rem']}
       backgroundImage="url(/pugnomics.webp), linear-gradient(0deg, #123D84, #123D84)"
       backgroundPosition="center center"

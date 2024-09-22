@@ -105,6 +105,25 @@ const Partners: FC = () => (
           DAO
         </H4>
       </A>
+      <A
+        gap="1rem"
+        display="flex"
+        target="_blank"
+        rel="noreferrer"
+        alignItems="center"
+        href="https://hop.ag"
+      >
+        <Img
+          width="4rem"
+          src="/hop-aggregator.webp"
+          alt="Hop Aggregator Logo"
+        />
+        <H4 fontSize="2rem" lineHeight="1.8rem">
+          Hop
+          <br />
+          Aggregator
+        </H4>
+      </A>
     </Div>
   </Div>
 );
