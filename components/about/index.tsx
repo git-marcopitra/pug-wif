@@ -34,7 +34,7 @@ const About: FC = () => (
         lineHeight={['2.2rem', '2.2rem', '3rem']}
       >
         Resurging from the ashes of a premature rug, arose the pug that
-        {" doesn't"}
+        {" doesn't "}
         quit. His message is clear: he {"won't"} stand for scams.
       </P>
       <br />
