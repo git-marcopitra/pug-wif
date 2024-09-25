@@ -81,21 +81,6 @@ const Partners: FC = () => (
         target="_blank"
         rel="noreferrer"
         alignItems="center"
-        href="https://nozomi.world/"
-      >
-        <Img width="4rem" src="/studio-mirai.webp" alt="Studio Mirai Logo" />
-        <H4 fontSize="2rem" lineHeight="1.8rem">
-          Studio
-          <br />
-          Mirai
-        </H4>
-      </A>
-      <A
-        gap="1rem"
-        display="flex"
-        target="_blank"
-        rel="noreferrer"
-        alignItems="center"
         href="https://dsllegacy.xyz"
       >
         <Img width="4rem" src="/dsl-legacy.webp" alt="DSL Legacy Logo" />
