@@ -10,7 +10,7 @@ const Partners: FC = () => (
     mx="auto"
     mt="9rem"
     bg="#ffffff"
-    maxWidth="70rem"
+    maxWidth="1440px"
     position="relative"
     borderRadius="4rem"
     boxShadow="0 18px 0 0 #D7D7D7"

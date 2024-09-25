@@ -1,3 +1,4 @@
+export { default as CloseSVG } from './close';
 export { default as CopySVG } from './copy';
 export { default as LogoSVG } from './logo';
 export { default as TelegramSVG } from './telegram';

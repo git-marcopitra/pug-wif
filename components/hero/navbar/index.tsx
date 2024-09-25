@@ -51,15 +51,15 @@ const Navbar: FC = () => (
         <A href="https://x.com/Pugwifsui" target="_blank" rel="noreferrer">
           <Button
             all="unset"
-            bg="#DAE2E9"
+            bg="#A56A58"
             width="4rem"
             height="4rem"
             display="flex"
-            color="#000000"
+            color="#ffffff"
             borderRadius="50%"
             alignItems="center"
             justifyContent="center"
-            boxShadow="3px 3px 0 0 #0A4E8D"
+            boxShadow="3px 3px 0 0 #341A12"
           >
             <XSVG maxWidth="1.4rem" maxHeight="1.4rem" width="100%" />
           </Button>

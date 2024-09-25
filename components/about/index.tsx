@@ -1,5 +1,7 @@
-import { Aside, Button, H2, H3, Img, P, Section } from '@stylin.js/elements';
+import { Aside, H2, H3, Img, P, Section } from '@stylin.js/elements';
 import { FC } from 'react';
+
+import BuyButton from '../buy-button';
 
 const About: FC = () => (
   <Section
@@ -9,9 +11,9 @@ const About: FC = () => (
     gap="2rem"
     display="flex"
     maxWidth="90rem"
-    alignItems="center"
     px={['3rem', '6rem']}
     justifyContent="space-evenly"
+    alignItems={['flex-start', 'center']}
     flexDirection={[
       'column-reverse',
       'column-reverse',
@@ -23,9 +25,9 @@ const About: FC = () => (
       gap="1rem"
       display="flex"
       flexDirection="column"
-      alignItems={['center', 'center', 'flex-start']}
+      alignItems="flex-start"
     >
-      <H2 fontSize={['3rem', '3rem', '4rem']}>ABOUT PUGWIFHAT</H2>
+      <H2 fontSize={['2rem', '2rem', '3rem']}>ABOUT PUGWIFHAT</H2>
       <P
         fontFamily="Rubik"
         fontSize={['1.5rem', '1.5rem', '1.8rem']}
@@ -45,9 +47,8 @@ const About: FC = () => (
         is his resilient spirit, a blue Sui hat and the support of the whole
         community.
       </P>
-      <H3 fontSize={['2rem', '2rem', '3rem']}>the hat STAYS on the pug</H3>
-      <Button
-        all="unset"
+      <H3 fontSize={['1.25rem', '2rem', '2rem']}>THE HAT STAYS ON THE PUG</H3>
+      <BuyButton
         mt="1rem"
         px="2.5rem"
         bg="#1C2E3B"
@@ -59,16 +60,14 @@ const About: FC = () => (
         alignSelf="flex-start"
         borderRadius="1.625rem"
         justifyContent="center"
-      >
-        Buy
-      </Button>
+      />
     </Aside>
     <Aside>
       <Img
         scale="1.2"
         alt="The Hat"
         src="the-hat.webp"
-        height={['22rem', '22rem', '35rem']}
+        height={['15rem', '22rem', '35rem']}
       />
     </Aside>
   </Section>

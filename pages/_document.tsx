@@ -23,6 +23,10 @@ const Document = () => (
         href="https://fonts.googleapis.com/css2?family=Rubik&display=swap"
         rel="stylesheet"
       />
+      <link
+        href="https://fonts.googleapis.com/css2?family=Sniglet:wght@400;800&display=swap"
+        rel="stylesheet"
+      />
     </Head>
     <body>
       <Main />

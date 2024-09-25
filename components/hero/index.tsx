@@ -1,5 +1,6 @@
 import { Div, H1, Header, Img, P } from '@stylin.js/elements';
 import { FC } from 'react';
+import Slider from 'react-slick';
 import unikey from 'unikey';
 
 import Navbar from './navbar';
@@ -32,15 +33,14 @@ const Hero: FC = () => (
       bg="#EDCF4E"
       left="-10vw"
       right="-10vw"
-      bottom="3rem"
       width="120vw"
-      display="flex"
-      rotate="-7.5deg"
       position="absolute"
-      borderTop="3px solid #000000"
-      borderBottom="3px solid #000000"
+      bottom={['0', '3rem']}
+      rotate={['0deg', '-7.5deg']}
+      borderTop="6px solid #000000"
+      borderBottom="6px solid #000000"
     >
-      {/* <Slider
+      <Slider
         autoplay
         infinite
         centerMode
@@ -51,13 +51,13 @@ const Hero: FC = () => (
         cssEase="linear"
         slidesToScroll={1}
         autoplaySpeed={2000}
-      > */}
-      {Array.from({ length: 10 }, () => (
-        <P key={unikey()} fontSize="2.5rem">
-          Pugzone
-        </P>
-      ))}
-      {/* </Slider> */}
+      >
+        {Array.from({ length: 10 }, () => (
+          <P key={unikey()} fontSize="2.5rem" ml="1rem">
+            Pugzone
+          </P>
+        ))}
+      </Slider>
     </Div>
   </Header>
 );

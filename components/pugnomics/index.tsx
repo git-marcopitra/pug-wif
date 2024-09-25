@@ -4,7 +4,7 @@ import { FC, useEffect, useState } from 'react';
 import { MAX_SUPPLY } from '@/constants';
 import { getBurnedAmount, reverseStringChunk } from '@/utilts';
 
-import Partners from '../partners';
+import HowToBuy from '../how-to-buy';
 import { TraceSVG } from '../svg';
 
 const Pugnomics: FC = () => {
@@ -22,15 +22,15 @@ const Pugnomics: FC = () => {
 
   return (
     <Section
-      py="8rem"
       id="pugnomics"
+      py={['4rem', '8rem']}
       px={['1rem', '3rem']}
       backgroundImage="url(/pugnomics.webp), linear-gradient(0deg, #123D84, #123D84)"
       backgroundPosition="center center"
       backgroundSize="cover"
     >
       <H2
-        fontSize={['4rem', '4rem', '6rem']}
+        fontSize={['3.5rem', '4rem', '6rem']}
         textAlign="center"
         color="#ffffff"
       >
@@ -55,26 +55,38 @@ const Pugnomics: FC = () => {
         flexDirection="column"
       >
         <Div display="flex" alignItems="center" gap="1rem" color="#fff">
-          <Img src="/pug-icon.webp" alt="Pug Icon" width={['4rem', '6rem']} />
-          <P fontSize={['2rem', '2.5rem', '3rem']}>
+          <Img
+            alt="Pug Icon"
+            src="/pug-icon.webp"
+            width={['2.5rem', '4rem', '6rem']}
+          />
+          <P fontSize={['1.25rem', '2.5rem', '3rem']}>
             Total Supply- 1,000,000,000
           </P>
         </Div>
         <Div display="flex" alignItems="center" gap="1rem" color="#fff">
-          <Img src="/hat-icon.webp" alt="Hat Icon" width={['4rem', '6rem']} />
-          <P fontSize={['2rem', '2.5rem', '3rem']}>
+          <Img
+            alt="Hat Icon"
+            src="/hat-icon.webp"
+            width={['2.5rem', '4rem', '6rem']}
+          />
+          <P fontSize={['1.25rem', '2.5rem', '3rem']}>
             circulating supply-{' '}
             {reverseStringChunk(String(MAX_SUPPLY - Number(burned)), 3).join()}
           </P>
         </Div>
         <Div display="flex" alignItems="center" gap="1rem" color="#fff">
-          <Img src="/pug-icon.webp" alt="Pug Icon" width={['4rem', '6rem']} />
-          <P fontSize={['2rem', '2.5rem', '3rem']}>
+          <Img
+            alt="Pug Icon"
+            src="/pug-icon.webp"
+            width={['2.5rem', '4rem', '6rem']}
+          />
+          <P fontSize={['1.25rem', '2.5rem', '3rem']}>
             % Burned- {burnedPer}% ({reverseStringChunk(burned, 3).join()})
           </P>
         </Div>
       </Div>
-      <Partners />
+      <HowToBuy />
     </Section>
   );
 };
