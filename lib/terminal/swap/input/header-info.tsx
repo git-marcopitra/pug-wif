@@ -1,4 +1,4 @@
-import { Box, Button, Typography } from '@interest-protocol/ui-kit';
+import { Box, Typography } from '@interest-protocol/ui-kit';
 import { FC } from 'react';
 import { useFormContext, useWatch } from 'react-hook-form';
 
@@ -24,42 +24,6 @@ const HeaderInfo: FC<InputProps> = ({ label }) => {
           : {symbol}
         </Typography>
       </Typography>
-      {label === 'from' && (
-        <Box display="flex" gap="s">
-          <a
-            href="https://changenow.io/exchange?from=&to=sui"
-            target="_blank"
-            rel="noreferrer"
-          >
-            <Button
-              px="xs"
-              py="2xs"
-              variant="outline"
-              borderRadius="full"
-              fontFamily="Satoshi"
-              borderColor="outlineVariant"
-            >
-              Bridge SUI
-            </Button>
-          </a>
-          <a
-            href="https://changenow.io/exchange?from=&to=sui&fiatMode=true  "
-            target="_blank"
-            rel="noreferrer"
-          >
-            <Button
-              px="xs"
-              py="2xs"
-              variant="outline"
-              borderRadius="full"
-              fontFamily="Satoshi"
-              borderColor="outlineVariant"
-            >
-              Buy SUI
-            </Button>
-          </a>
-        </Box>
-      )}
     </Box>
   );
 };
