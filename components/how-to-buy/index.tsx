@@ -114,7 +114,7 @@ const HowToBuy: FC = () => (
                 px="1.5rem"
                 bg="#1C2E3B"
                 color="#ffffff"
-                fontSize={['0.75rem']}
+                fontSize="0.75rem"
                 borderRadius="2rem"
               >
                 {button}
