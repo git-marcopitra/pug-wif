@@ -14,10 +14,10 @@ const Navbar: FC = () => (
   >
     <Div>
       <Img
-        width="6.25rem"
-        height="6.25rem"
         src="/logo.webp"
         alt="$PUGWIF logo"
+        width={['5rem', '6.25rem']}
+        height={['5rem', '6.25rem']}
       />
     </Div>
     <Nav
