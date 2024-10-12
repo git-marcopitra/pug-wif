@@ -81,7 +81,7 @@ const Community: FC = () => (
         target="_blank"
         rel="noreferrer"
         alignSelf="center"
-        href="https://isstudios.8thwall.app/pugwifsui2/"
+        href="https://isstudios.8thwall.app/SuiPugwif/"
       >
         <Button
           all="unset"

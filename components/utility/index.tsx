@@ -58,7 +58,7 @@ const Utility: FC = () => (
             <TelegramSVG maxWidth="2rem" maxHeight="2rem" width="100%" />
           </Button>
         </A>
-        <A href="https://x.com/pugwifsui2" target="_blank" rel="noreferrer">
+        <A href="https://x.com/SuiPugwif" target="_blank" rel="noreferrer">
           <Button
             all="unset"
             bg="#000000"
