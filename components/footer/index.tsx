@@ -67,7 +67,7 @@ const Footer: FC = () => (
           CoinGecko
         </A>
         <A
-          href="https://coinmarketcap.com/dexscan/sui%20network/0x964b391c0255120984000735d381d62fe4608e5330ddd15042e41ad3fdab5f24/"
+          href="https://coinmarketcap.com/currencies/pugwifhat/"
           fontFamily="Rubik"
           target="_blank"
           rel="noreferrer"
