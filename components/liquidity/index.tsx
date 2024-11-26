@@ -60,15 +60,15 @@ const Liquidity: FC = () => {
           rel="noreferrer"
           alignItems="center"
           flexDirection="column"
-          href="https://hop.ag/swap/SUI-PUGWIF"
+          href="https://aftermath.finance/trade?from=USDC&to=PUGWIF"
         >
           <Img
-            alt="Hop"
-            src="/hop-aggregator.webp"
+            alt="Aftermath"
+            src="/aftermath.webp"
             width={['7rem', '7rem', '12rem']}
           />
           <H3 fontSize="2rem" textDecoration="underline">
-            Hop
+            aftermath
           </H3>
         </A>
       </Div>

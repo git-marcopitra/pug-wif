@@ -2,7 +2,7 @@ import { Div, H2, Img, P, Section } from '@stylin.js/elements';
 import { FC, useEffect, useState } from 'react';
 
 import { MAX_SUPPLY } from '@/constants';
-import { getBurnedAmount, reverseStringChunk } from '@/utilts';
+import { getBurnedAmount, reverseStringChunk } from '@/utils';
 
 import HowToBuy from '../how-to-buy';
 import { TraceSVG } from '../svg';

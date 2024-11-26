@@ -1,16 +1,11 @@
+import { SwapTerminal } from '@interest-protocol/sui-coins-terminal';
 import { Modal, Motion } from '@interest-protocol/ui-kit';
 import { SUI_TYPE_ARG } from '@mysten/sui/utils';
 import { Button, ButtonProps, Div } from '@stylin.js/elements';
-import dynamic from 'next/dynamic';
 import { FC, useState } from 'react';
 
 import { CA } from '../../constants';
 import { TimesSVG } from '../svg';
-
-const SwapInterface = dynamic(
-  import('../../lib/terminal').then(({ SwapInterface }) => SwapInterface),
-  { ssr: false }
-);
 
 const BuyButton: FC<ButtonProps> = (props) => {
   const [open, setOpen] = useState(false);
@@ -55,7 +50,12 @@ const BuyButton: FC<ButtonProps> = (props) => {
             animate={{ opacity: 1 }}
             transition={{ duration: 0.8 }}
           >
-            <SwapInterface fixedOut typeOut={CA} typeIn={SUI_TYPE_ARG} />
+            <SwapTerminal
+              fixedOut
+              typeOut={CA}
+              typeIn={SUI_TYPE_ARG}
+              projectAddress="0xdd224f2287f0b38693555c6077abe85fcb4aa13e355ad54bc167611896b007e6"
+            />
           </Motion>
         </Div>
       </Modal>

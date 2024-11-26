@@ -18,6 +18,5 @@ export const DATA = [
     title: 'Buy PUGWIF',
     description: 'Buy PUGWIFHAT on any of the decentralized exchanges',
     button: 'Buy',
-    link: 'https://hop.ag/swap/SUI-PUGWIF',
   },
 ];
